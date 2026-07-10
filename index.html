@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah Graves</title>
+  <meta name="description" content="Guard at Texas. Building in sports, media, and AI.">
+  <meta property="og:title" content="Sarah Graves">
+  <meta property="og:description" content="Guard at Texas. Building in sports, media, and AI.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#FAF8F4">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22central%22%20text-anchor%3D%22middle%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2236%22%20font-weight%3D%22500%22%20fill%3D%22%231A1815%22%3ESG%3C%2Ftext%3E%3C%2Fsvg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --canvas: #FAF8F4;
+      --ink: #1A1815;
+      --muted: #6E6A62;
+      --accent: #A97E2F;
+      --border: #E2DED5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 72px 24px;
+    }
+
+    .stage {
+      opacity: 0;
+      transform: translateY(12px);
+      animation: rise 600ms ease-out forwards;
+    }
+
+    @keyframes rise {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .composition {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .name {
+      font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+    }
+
+    .tagline {
+      margin-top: 18px;
+      font-size: 17px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .links {
+      margin-top: 34px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 12px 24px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: transparent;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 1;
+      transition: border-color 200ms ease, color 200ms ease;
+    }
+
+    .pill:hover,
+    .pill:focus-visible {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .pill:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .caption {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 28px;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    @media (max-width: 480px) {
+      .name {
+        font-size: 40px;
+      }
+
+      .tagline {
+        font-size: 16px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .stage {
+        opacity: 1;
+        transform: none;
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stage composition">
+    <h1 class="name">Sarah Graves</h1>
+    <p class="tagline">Guard at Texas. Building in sports, media, and AI.</p>
+    <nav class="links" aria-label="Social links">
+      <a class="pill" href="https://www.linkedin.com/in/sarahkgraves" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="pill" href="https://www.instagram.com/sarahkgraves" target="_blank" rel="noopener">Instagram</a>
+      <a class="pill" href="https://x.com/sarahkgraves" target="_blank" rel="noopener">X</a>
+      <a class="pill" href="mailto:sarahkgraves2@gmail.com">Email</a>
+    </nav>
+  </div>
+  <div class="caption">New Site in Progress &middot; 2026</div>
+</body>
+</html>
