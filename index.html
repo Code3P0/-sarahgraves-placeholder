@@ -5,14 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sarah Graves</title>
   <meta name="description" content="Sarah Graves">
+  <link rel="canonical" href="https://sarahgraves.com/">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://sarahgraves.com/">
   <meta property="og:title" content="Sarah Graves">
   <meta property="og:description" content="Sarah Graves">
-  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://sarahgraves.com/sarah-graves.jpg">
+  <meta property="og:image:alt" content="Sarah Graves">
+  <meta property="profile:first_name" content="Sarah">
+  <meta property="profile:last_name" content="Graves">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sarah Graves">
+  <meta name="twitter:description" content="Sarah Graves">
+  <meta name="twitter:image" content="https://sarahgraves.com/sarah-graves.jpg">
+  <meta name="twitter:image:alt" content="Sarah Graves">
   <meta name="theme-color" content="#FAF8F4">
   <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22central%22%20text-anchor%3D%22middle%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2236%22%20font-weight%3D%22500%22%20fill%3D%22%231A1815%22%3ESG%3C%2Ftext%3E%3C%2Fsvg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sarah Graves",
+    "url": "https://sarahgraves.com/",
+    "image": "https://sarahgraves.com/sarah-graves.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/sarahkgraves",
+      "https://www.instagram.com/sarahkgraves",
+      "https://x.com/sarahkgraves"
+    ]
+  }
+  </script>
   <style>
     :root {
       --canvas: #FAF8F4;
@@ -61,6 +86,17 @@
     .composition {
       text-align: center;
       max-width: 600px;
+    }
+
+    .portrait {
+      width: 128px;
+      height: 128px;
+      border-radius: 999px;
+      object-fit: cover;
+      object-position: 50% 22%;
+      margin: 0 auto 30px;
+      display: block;
+      box-shadow: 0 1px 3px rgba(26, 24, 21, 0.08);
     }
 
     .name {
@@ -124,6 +160,12 @@
     }
 
     @media (max-width: 480px) {
+      .portrait {
+        width: 104px;
+        height: 104px;
+        margin-bottom: 24px;
+      }
+
       .name {
         font-size: 40px;
       }
@@ -144,6 +186,7 @@
 </head>
 <body>
   <div class="stage composition">
+    <img class="portrait" src="sarah-graves.jpg" width="256" height="256" alt="Sarah Graves" onerror="this.style.display='none'">
     <h1 class="name">Sarah Graves</h1>
     <p class="tagline">Feel free to contact:</p>
     <nav class="links" aria-label="Social links">
